@@ -1,0 +1,72 @@
+import React from 'react';
+import { Router, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Header } from '../_components/Header';
+
+import { history } from '../_helpers';
+import { alertActions } from '../_actions';
+import { PrivateRoute } from '../_components';
+import { Banner } from 'rebass';
+
+// Pages
+import { HomePage } from '../HomePage';
+import { TestPage } from '../TestPage';
+import { AboutPage } from '../AboutPage';
+import { ApplyPage } from '../ApplyPage';
+
+import '../_constants/styles.css'
+
+
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+
+        const { dispatch } = this.props;
+        history.listen((location, action) => {
+            // clear alert on location change
+            dispatch(alertActions.clear());
+        });
+    }
+
+    render() {
+        const { alert } = this.props;
+        return (
+            <div>
+                {/* < Header /> */}
+                {/* < Banner bg='white' minHeight='25%' /> */}
+                <div>
+                    <div>
+                        <div>
+                            {alert.message &&
+                                <div className={`alert ${alert.type}`}>{alert.message}</div>
+                            }
+
+                            {/* All routes can access Apollo if necessary. */}
+                                <Router history={history}>
+                                    <div>
+                                        <div className="col-sm-offset-0">
+                                          <Route exact path="/" component={HomePage} />
+                                          <Route path="/test" component={TestPage} />
+                                          <Route path="/apply" component={ApplyPage} />
+                                          <Route path="/about" component={AboutPage} />
+                                          {/* <PrivateRoute exact path="/admin" component={AdminPage} /> */}
+                                        </div>
+                                    </div>
+                                </Router>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+function mapStateToProps(state) {
+    const { alert } = state;
+    return {
+        alert
+    };
+}
+
+const connectedApp = connect(mapStateToProps)(App);
+export { connectedApp as App };
