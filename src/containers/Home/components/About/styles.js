@@ -11,6 +11,7 @@ export const Wrapper = styled(Flex)`
   flex-direction: column;
   height: 100vh;
   padding-top: 65px;
+  margin-top: 65px;
 `;
 
 export const Heading = styled.div`

@@ -8,8 +8,8 @@ export const Wrapper = styled(Flex)`
   font-family: ${themeGet("fonts.primary")};
   ${width};
   margin: auto;
-  height: 100vh + 70px;
-  padding-top: 70px;
+  height: 100vh + 100px;
+  padding-top: 100px;
 `;
 
 export const Body = styled(Flex)`

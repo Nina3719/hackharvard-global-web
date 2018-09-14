@@ -20,10 +20,12 @@ class Faq extends Component {
         </Heading>
         {Object.entries(QA).map(questions => (
           <QAWrapper>
-            <Questions fontSize={["1em", "1em", "1.5em"]}>
+            <Questions fontSize={["1em", "1.3em", "1.5em"]}>
               {questions[0]}
             </Questions>
-            <Answers fontSize={["1em", "1em", "1.5em"]}>{questions[1]}</Answers>
+            <Answers fontSize={["1em", "1.3em", "1.5em"]}>
+              {questions[1]}
+            </Answers>
           </QAWrapper>
         ))}
         <Links
