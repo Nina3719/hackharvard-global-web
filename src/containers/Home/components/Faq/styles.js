@@ -11,6 +11,7 @@ export const Wrapper = styled(Flex)`
   ${width};
   flex-direction: column;
   padding-top: 80px;
+  padding-bottom: 200px;
 `;
 
 export const Heading = styled.div`
@@ -31,11 +32,23 @@ export const Questions = styled.div`
   font-weight: bold;
   color: ${themeGet("colors.hack")};
   margin-bottom: 10px;
+  cursor: pointer;
+  min-height: 50px;
+  width: 100%;
+  border-radius: 6px;
+  padding-top: 15px;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
 `;
 
 export const Answers = styled.div`
   ${fontSize};
   margin-bottom: 30px;
+  display: ${props => (props.show ? "block" : "none")};
 `;
 
 export const Links = styled.a`
@@ -45,4 +58,11 @@ export const Links = styled.a`
   color: ${themeGet("colors.secondary")};
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 50px;
+`;
+
+export const OWrapper = styled.div`
+  /* background: #dcdcdc; */
+  width: 100vw;
+  margin-left: -8px;
 `;

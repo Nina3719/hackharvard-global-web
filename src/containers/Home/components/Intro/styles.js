@@ -37,7 +37,7 @@ export const Left = styled.div`
   color: ${props => (props.background ? "white" : "black")};
   padding: ${props => (props.background ? "20px" : "0")};
   box-shadow: ${props =>
-    props.background ? "10px 10px red, -1em -0.5em .4em olive" : ""};
+    props.background ? "10px 10px red, -1em -0.5em .4em grey" : ""};
 `;
 
 export const Points = styled.div`
@@ -59,4 +59,10 @@ export const Text = styled.div`
 export const Section = styled(Flex)`
   margin-bottom: 80px;
   ${flexDirection};
+`;
+
+export const OWrapper = styled.div`
+  background: #f5f5f5;
+  width: 100vw;
+  margin-left: -8px;
 `;

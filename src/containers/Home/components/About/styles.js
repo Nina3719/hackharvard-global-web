@@ -14,6 +14,12 @@ export const Wrapper = styled(Flex)`
   margin-top: 65px;
 `;
 
+export const OWrapper = styled.div`
+  background: #dcdcdc;
+  width: 100vw;
+  margin-left: -8px;
+`;
+
 export const Heading = styled.div`
   ${fontSize};
   font-weight: bolder;
@@ -27,7 +33,7 @@ export const Move = styled.div`
 
 export const Text = styled.div`
   ${fontSize};
-  color: ${themeGet("colors.secondary")};
+  /* color: ${themeGet("colors.secondary")}; */
   margin-right: 15px;
   text-align: justify;
   line-height: 30px;

@@ -8,9 +8,9 @@ import {
   SponsorLogo
 } from "./styles.js";
 
-import alibaba from "./assests/alibaba.svg";
+import alibaba from "./assests/alibaba1.png";
 import seas from "./assests/seas.svg";
-import tianchi from "./assests/tianchi.svg";
+import tianchi from "./assests/tianchi1.png";
 import zhe from "./assests/zhejiang.png";
 
 class Sponsors extends Component {
@@ -18,7 +18,7 @@ class Sponsors extends Component {
     const Logos = [zhe, alibaba, tianchi];
     return (
       <Wrapper>
-        <Heading fontSize={["2em", "3em", "5em"]}>
+        <Heading fontSize={["2em", "3em", "4em"]}>
           {" "}
           Organizers and Sponsors{" "}
         </Heading>
