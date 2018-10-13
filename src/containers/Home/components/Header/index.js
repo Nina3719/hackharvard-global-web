@@ -7,34 +7,37 @@ import {
   Subheading,
   Button,
   Text,
-  HackImg
+  HackImg,
+  Inner
 } from "./styles.js";
 
 import HackLogo from "../../assests/hh400.svg";
+import Photo from "../../assests/headerbackground.png";
 
 class Header extends Component {
   render() {
     return (
-      <Wrapper
-        flexDirection={["column", "column", "row"]}
-        width={["100%", "100%", "1000px"]}
-      >
-        <Body width={["100%", "100%", "600px"]}>
-          <Heading fontSize={["3em", "4em", "5em"]}>HackHarvard Global</Heading>
-          <Subheading> November 2018 </Subheading>
-          <Text>
-            Compete in the largest hackathon at Harvard University, from
-            anywhere in the world
-          </Text>
-          <Button m={["auto", "auto", "0"]} mt={["20px", "20px", "20px"]}>
-            Register Now!
-          </Button>
-        </Body>
-        <HackImg
-          src={HackLogo}
-          alt="HackHarvard Global"
-          height={["300px", "60%", "100%"]}
-        />
+      <Wrapper flexDirection={["column", "column", "row"]} photo={Photo}>
+        <Inner
+          width={["95%", "95%", "1000px"]}
+          flexDirection={["column", "column", "row"]}
+        >
+          <Body width={["100%", "100%", "600px"]}>
+            <Heading fontSize={["3em", "4em", "5em"]}>
+              HackHarvard Global 2018
+            </Heading>
+            <Subheading> Sponsored by Zhejiang Lab </Subheading>
+            <Text>Think Global. Act Local. A different kind of hackathon.</Text>
+            <Button m={["auto", "auto", "0"]} mt={["20px", "20px", "20px"]}>
+              Register Now!
+            </Button>
+          </Body>
+          <HackImg
+            src={HackLogo}
+            alt="HackHarvard Global"
+            height={["300px", "60%", "100%"]}
+          />
+        </Inner>
       </Wrapper>
     );
   }

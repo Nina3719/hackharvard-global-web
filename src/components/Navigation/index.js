@@ -13,6 +13,9 @@ class NavigationBar extends Component {
         <Links href="#About" current={now === "#About"}>
           About
         </Links>
+        <Links href="#Intro" current={now === "#Intro"}>
+          Competition
+        </Links>
         <Links href="#Faq" current={now === "#Faq"}>
           FAQs
         </Links>
@@ -26,7 +29,7 @@ class NavigationBar extends Component {
       <NavBarWrapper>
         <Links href="#Home" mt="0" current={now === "#Home"}>
           <Button src={Logo} alt="HackHarvard Logo" ml="10px" />
-          <Media query="(min-width: 975px)">
+          <Media query="(min-width: 1199px)">
             {matches => (matches ? <span> HackHarvard Global </span> : <div />)}
           </Media>
         </Links>

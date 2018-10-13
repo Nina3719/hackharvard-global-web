@@ -16,7 +16,7 @@ export const Wrapper = styled(Flex)`
 export const Heading = styled.div`
   font-weight: bolder;
   ${fontSize};
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 `;
 
 export const QAWrapper = styled(Flex)`

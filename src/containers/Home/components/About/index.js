@@ -1,25 +1,33 @@
 import React, { Component } from "react";
 
-import { Wrapper, Heading, Text, Img, Body } from "./styles.js";
+import { Wrapper, Heading, Text, Img, Body, Move } from "./styles.js";
 
 import John from "./assets/john.svg";
 
 class About extends Component {
   render() {
     return (
-      <Wrapper width={["100%", "100%", "1000px"]}>
-        <Heading fontSize={["2em", "2em", "3.5em"]}>
-          Solve Global Problems ... <br />
-          ...compete with the best
+      <Wrapper width={["95%", "95%", "1000px"]}>
+        <Heading fontSize={["2em", "2em", "3.2em"]}>
+          Solve Global Problems ...
+          <Move>...compete with the best</Move>
         </Heading>
         <Body flexDirection={["column", "column", "row"]}>
-          <Text fontSize={["1.3em", "1.6em", "1.8em"]}>
-            HackHarvard Global is a joint initiative by Harvard students of the
-            group HackHarvardCollege and partners at Alibaba Cloud Tianchi to
-            present a new type of hackathon - a hackathon that allows students
-            to make innovative changes locally and globally.
+          <Text fontSize="1em">
+            In the year 2018, the internet has enabled a globally-connected
+            world unlike ever before. Yet in the internet age, even the greatest
+            technologies cannot solve local problems in every community. Local
+            communities face problems such as education, environmental issues,
+            and elderly care where one-size-fits-all solutions are ineffective.
+            HackHarvard Global, a group based at Harvard University in
+            Cambridge, Massachusetts has partnered with Zhejiang Lab and Alibaba
+            Cloud to introduce the HackHarvard Global competition. Participants
+            on teams of 2-3 people will be tasked with identifying a problem in
+            your local community and proposing a solution to it. Project
+            finalists will be reviewed by world-renowned professors at Harvard
+            University and receive prize funding and recognition.
           </Text>
-          <Img src={John} alt="John" />
+          <Img src={John} alt="John" width={["100%", "100%", "50%"]} />
         </Body>
       </Wrapper>
     );

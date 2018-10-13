@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Faq from "./components/Faq";
 import Sponsors from "./components/Sponsors";
+import Intro from "./components/Intro";
 
 import { Wrapper, Links } from "./styles.js";
 
@@ -24,6 +25,9 @@ class Home extends Component {
         </ScrollableAnchor>
         <ScrollableAnchor id={"About"}>
           <About />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={"Intro"}>
+          <Intro />
         </ScrollableAnchor>
         <ScrollableAnchor id={"Faq"}>
           <Faq />

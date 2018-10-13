@@ -12,7 +12,7 @@ export const Wrapper = styled(Flex)`
   background: black;
   margin-left: -8px;
   margin-bottom: -8px;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 65px;
 `;
 
@@ -21,7 +21,8 @@ export const Heading = styled.div`
   font-weight: bolder;
   text-align: center;
   color: ${themeGet("colors.primary")};
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 `;
 
 export const Subheading = styled.div`
@@ -37,10 +38,13 @@ export const SponsorLogo = styled.img`
   margin: 50px;
   margin-left: 0;
   margin-top: 0;
+  width: 250px;
+  max-height: 300px;
 `;
 
 export const LogoList = styled(Flex)`
   ${width};
   margin: auto;
   flex-wrap: wrap;
+  justify-content: space-between;
 `;

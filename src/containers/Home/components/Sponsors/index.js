@@ -11,14 +11,17 @@ import {
 import alibaba from "./assests/alibaba.svg";
 import seas from "./assests/seas.svg";
 import tianchi from "./assests/tianchi.svg";
+import zhe from "./assests/zhejiang.png";
 
 class Sponsors extends Component {
   render() {
-    const Logos = [seas, alibaba, tianchi];
+    const Logos = [zhe, alibaba, tianchi];
     return (
       <Wrapper>
-        <Heading fontSize={["3em", "3em", "5em"]}> Sponsors </Heading>
-        <Subheading> Choose your affiliation </Subheading>
+        <Heading fontSize={["2em", "3em", "5em"]}>
+          {" "}
+          Organizers and Sponsors{" "}
+        </Heading>
         <LogoList width={["95%", "95%", "1000px"]}>
           {Logos.map(sponsored => (
             <SponsorLogo src={sponsored} alt="Logo" />
