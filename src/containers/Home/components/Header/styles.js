@@ -14,6 +14,7 @@ export const Wrapper = styled(Flex)`
   background-size: cover;
   margin-left: -8px;
   padding-bottom: 40px;
+  margin-top: -8px;
 `;
 
 export const Inner = styled(Flex)`

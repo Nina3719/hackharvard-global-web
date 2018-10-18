@@ -91,7 +91,7 @@ class Intro extends Component {
               ml={["0%", "10%", "10%"]}
               mt={["10%", "0%", "0%"]}
             >
-              <Big fontSize={["1.5em", "2em", "2.5em"]}>01 </Big> <br />
+              <Big fontSize={["2.5em", "2.5em", "2.5em"]}>01 </Big> <br />
               Educational technologies
               <ThemeImg src={education} width={["100%", "500px", "500px"]} />
             </Text>
@@ -105,7 +105,7 @@ class Intro extends Component {
               mr="3%"
               mt={["10%", "0%", "0%"]}
             >
-              <Big fontSize={["1.5em", "2em", "2.5em"]}>02 </Big> <br />
+              <Big fontSize={["2.5em", "2.5em", "2.5em"]}>02 </Big> <br />
               Environmental technologies{" "}
               <ThemeImg
                 src={trash}
@@ -197,7 +197,7 @@ class Intro extends Component {
               ml={["0%", "10%", "10%"]}
               mt={["10%", "0%", "0%"]}
             >
-              <Big fontSize={["1.5em", "2em", "2.5em"]}>03 </Big> <br />
+              <Big fontSize={["2.5em", "2.5em", "2.5em"]}>03 </Big> <br />
               Technologies for the elderly{" "}
               <ThemeImg src={elderly} width={["100%", "500px", "500px"]} />
             </Text>

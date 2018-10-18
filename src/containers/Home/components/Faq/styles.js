@@ -62,7 +62,7 @@ export const Links = styled.a`
 `;
 
 export const OWrapper = styled.div`
-  /* background: #dcdcdc; */
+  background: #dcdcdc;
   width: 100vw;
   margin-left: -8px;
 `;

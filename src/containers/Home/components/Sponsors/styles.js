@@ -46,5 +46,6 @@ export const LogoList = styled(Flex)`
   ${width};
   margin: auto;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between;
+  justify-content: center; */
 `;
