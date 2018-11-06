@@ -28,9 +28,14 @@ class Header extends Component {
             </Heading>
             <Subheading> Sponsored by Zhejiang Lab </Subheading>
             <Text>Think Global. Act Local. A different kind of hackathon.</Text>
-            <Button m={["auto", "auto", "0"]} mt={["20px", "20px", "20px"]}>
-              Register Now!
-            </Button>
+            <a
+              href="https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.100066.0.0.3e7bd780TVwUD1&raceId=231692"
+              target="_blank"
+            >
+              <Button m={["auto", "auto", "0"]} mt={["20px", "20px", "20px"]}>
+                Register Now!
+              </Button>
+            </a>
           </Body>
           <HackImg
             src={HackLogo}
