@@ -2,7 +2,7 @@
   "name": "hackharvard-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Nina3719.github.io/hackharvardglobal-site",
+  "homepage": "https://Nina3719.github.io/hackharvard-global-web",
   "devDependencies": {
     "gh-pages": "^1.2.0",
     "react-scripts": "2.1.1"
