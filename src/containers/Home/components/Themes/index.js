@@ -30,7 +30,7 @@ class Intro extends Component {
               pt="20px"
             >
               HACKATHON THEMES
-              <ThemeImg src={hack} width={["100%", "500px", "500px"]} />
+              <ThemeImg src={hack} width={["100%", "400px", "500px"]} />
             </Text>
           </Left>
           <Right
@@ -93,7 +93,7 @@ class Intro extends Component {
             >
               <Big fontSize={["2.5em", "2.5em", "2.5em"]}>01 </Big> <br />
               Educational technologies
-              <ThemeImg src={education} width={["100%", "500px", "500px"]} />
+              <ThemeImg src={education} width={["100%", "400px", "500px"]} />
             </Text>
           </Right>
         </Section>
@@ -109,7 +109,7 @@ class Intro extends Component {
               Environmental technologies{" "}
               <ThemeImg
                 src={trash}
-                width={["100%", "500px", "500px"]}
+                width={["100%", "400px", "500px"]}
                 ml={["0", "-50px", "-75px"]}
               />
             </Text>
@@ -199,7 +199,7 @@ class Intro extends Component {
             >
               <Big fontSize={["2.5em", "2.5em", "2.5em"]}>03 </Big> <br />
               Technologies for the elderly{" "}
-              <ThemeImg src={elderly} width={["100%", "500px", "500px"]} />
+              <ThemeImg src={elderly} width={["100%", "400px", "500px"]} />
             </Text>
           </Right>
         </Section>
